@@ -7,10 +7,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 40px;
-  background: rgba(255, 255, 255, 0.9);
+  padding: 14px 40px;
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  /* police differente du reste du site */
+  font-family: 'Georgia', 'Times New Roman', serif;
 }
 
 .logo {
@@ -18,40 +20,129 @@
   align-items: center;
   gap: 8px;
   font-weight: 800;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   color: var(--vert-primary);
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 .logoIcon {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
+/* liens du menu desktop */
 .links {
   display: flex;
   align-items: center;
-  gap: 30px;
-  font-size: 0.95rem;
+  gap: 8px;
 }
 
-.links a {
-  color: var(--noir);
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
   font-weight: 500;
-  transition: color 0.2s;
+  color: var(--gris);
+  transition: all 0.2s;
 }
 
-.links a:hover {
+.navLink:hover {
   color: var(--vert-primary);
+  background-color: var(--vert-bg);
 }
 
-.btnNav {
-  background-color: var(--vert-primary);
-  color: var(--blanc) !important;
-  padding: 10px 22px;
-  border-radius: 50px;
+/* lien actif = la page ou on est */
+.active {
+  color: var(--vert-primary);
+  background-color: var(--vert-bg);
   font-weight: 600;
+}
+
+/* bouton deconnexion */
+.btnDeconnexion {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--blanc);
+  background-color: var(--vert-primary);
+  margin-left: 10px;
   transition: background-color 0.3s;
 }
 
-.btnNav:hover {
+.btnDeconnexion:hover {
   background-color: var(--vert-dark);
+}
+
+/* hamburger - cache sur desktop */
+.hamburger {
+  display: none;
+  background: none;
+  font-size: 1.4rem;
+  color: var(--noir);
+}
+
+/* menu mobile */
+.mobileMenu {
+  display: none;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 14px 20px;
+  }
+
+  /* on cache le menu desktop */
+  .links {
+    display: none;
+  }
+
+  /* on affiche le hamburger */
+  .hamburger {
+    display: block;
+  }
+
+  /* menu mobile qui s'ouvre */
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--blanc);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    padding: 10px 0;
+    font-family: 'Georgia', 'Times New Roman', serif;
+  }
+
+  .mobileMenu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--noir);
+    transition: background-color 0.2s;
+  }
+
+  .mobileMenu a:hover {
+    background-color: var(--vert-bg);
+    color: var(--vert-primary);
+  }
+
+  .mobileDeconnexion {
+    color: var(--vert-primary) !important;
+    font-weight: 600 !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    margin-top: 4px;
+  }
 }
