@@ -17,6 +17,7 @@ Une application web pour calculer son empreinte carbone. L'idée c'est simple : 
 - Dashboard avec le score total en kg CO₂/semaine
 - Graphique en camembert pour voir la répartition
 - Comparaison avec la moyenne française 
+- Conseils personnalisés selon ton profil
 - Responsive (ça marche sur mobile)
 - Vidéo en fond sur la page d'accueil et les résultats
 
