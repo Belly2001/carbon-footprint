@@ -1,0 +1,273 @@
+/* page calculateur */
+.page {
+  min-height: 100vh;
+  padding-top: 90px;
+  padding-bottom: 60px;
+  background-color: var(--gris-light);
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.titrePage {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: var(--noir);
+}
+
+/* barre de progression */
+.progressContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.progressStep {
+  display: flex;
+  align-items: center;
+}
+
+.progressCircle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  background-color: #e5e7eb;
+  color: var(--gris);
+  transition: all 0.3s;
+}
+
+.progressActive {
+  background-color: var(--vert-primary);
+  color: white;
+}
+
+.progressLine {
+  width: 60px;
+  height: 3px;
+  background-color: #e5e7eb;
+  margin: 0 6px;
+  transition: background-color 0.3s;
+}
+
+.progressLineActive {
+  background-color: var(--vert-primary);
+}
+
+/* carte du formulaire */
+.formCard {
+  background: var(--blanc);
+  border-radius: 20px;
+  padding: 40px 35px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* contenu de chaque etape */
+.stepContent h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--noir);
+}
+
+.stepDesc {
+  color: var(--gris);
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+}
+
+/* grille d'options cliquables (transport, alimentation) */
+.optionsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.optionCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 18px 12px;
+  border-radius: 12px;
+  border: 2px solid #e5e7eb;
+  background: var(--blanc);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--noir);
+  transition: all 0.2s;
+}
+
+.optionCard:hover {
+  border-color: var(--vert-light);
+  background-color: var(--vert-bg);
+}
+
+.optionSelected {
+  border-color: var(--vert-primary);
+  background-color: var(--vert-bg);
+  color: var(--vert-primary);
+}
+
+.optionIcon {
+  font-size: 1.5rem;
+}
+
+.optionLabel {
+  font-size: 1rem;
+}
+
+.optionDesc {
+  font-size: 0.78rem;
+  color: var(--gris);
+  font-weight: 400;
+}
+
+/* inputs */
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.inputGroup label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: var(--noir);
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 2px solid #e5e7eb;
+  font-size: 1rem;
+  font-family: var(--font-main);
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.inputGroup input:focus {
+  border-color: var(--vert-primary);
+}
+
+/* grille pour la page numerique */
+.numeriqueGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.numeriqueCard {
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #e5e7eb;
+  text-align: center;
+}
+
+.numeriqueHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.numeriqueIcon {
+  font-size: 1.2rem;
+  color: var(--vert-primary);
+}
+
+.numeriqueLabel {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.numeriqueCard input {
+  width: 80px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid #e5e7eb;
+  font-size: 1.1rem;
+  text-align: center;
+  font-family: var(--font-main);
+  outline: none;
+  margin-bottom: 4px;
+}
+
+.numeriqueCard input:focus {
+  border-color: var(--vert-primary);
+}
+
+.unite {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--gris);
+}
+
+/* boutons navigation */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.btnPrecedent {
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  background-color: var(--gris-light);
+  color: var(--noir);
+  transition: background-color 0.2s;
+}
+
+.btnPrecedent:hover {
+  background-color: #e5e7eb;
+}
+
+.btnSuivant {
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  background-color: var(--vert-primary);
+  color: white;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btnSuivant:hover {
+  background-color: var(--vert-dark);
+  transform: translateY(-2px);
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .formCard {
+    padding: 25px 20px;
+  }
+
+  .optionsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .numeriqueGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .progressLine {
+    width: 35px;
+  }
+}
