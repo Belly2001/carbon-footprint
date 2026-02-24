@@ -22,8 +22,8 @@ export default function HeroSection() {
       {/* contenu par dessus la video */}
       <div className={styles.content}>
         <h1 className={styles.titre}>
-          CONNAIS TON<br/>
-          EMPREINTE<br/>
+          CALCULEZ<br/>
+          VOTRE EMPREINTE<br/>
           CARBONE
         </h1>
         <p className={styles.sousTitre}>
