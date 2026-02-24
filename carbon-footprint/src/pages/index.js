@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import HeroSection from '../components/HeroSection'
+import HowItWorks from '../components/HowItWorks'
+import Categories from '../components/Categories'
 import Footer from '../components/Footer'
 
 export default function Home() {
@@ -14,6 +16,8 @@ export default function Home() {
 
       <Navbar />
       <HeroSection />
+      <HowItWorks />
+      <Categories />
       <Footer />
     </>
   )
