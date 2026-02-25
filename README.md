@@ -37,4 +37,4 @@ src/
 
 **Don Belly Star NDANGA**  
 L3 MIASHS Parcours Informatique — Université Toulouse Jean Jaurès  
-[LinkedIn](https://www.linkedin.com/in/don-belly-star-ndanga/) · [GitHub](https://github.com/Belly2001)
+[LinkedIn](https://www.linkedin.com/in/don-belly-star-ndanga/) · [GitHub](https://github.com/Belly2001) . [Vercel](https://carbon-footprint-gules.vercel.app/)
