@@ -21,7 +21,7 @@ export default function Footer() {
           </a>
         </div>
         <p className={styles.copy}>
-          © 2026 Don Belly Star NDANGA — Projet universitaire L3 MIASHS
+          © 2026 Don Belly Star NDANGA — L3 MIASHS
         </p>
       </div>
     </footer>
